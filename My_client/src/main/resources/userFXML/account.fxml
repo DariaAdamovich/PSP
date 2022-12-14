@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchorPane" minHeight="0.0" minWidth="0.0" prefHeight="470.0" prefWidth="700.0" styleClass="bodybg" stylesheets="@../css/background.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="userFXML.Account">
+   <children>
+      <Button fx:id="btnExit" layoutX="590.0" layoutY="402.0" mnemonicParsing="false" onAction="#Exit_Pressed" styleClass="redline" stylesheets="@../css/stylesheet.css" text="Выход">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnManageAccount" layoutX="443.0" layoutY="112.0" mnemonicParsing="false" onAction="#Manage_Account_Pressed" styleClass="redline" stylesheets="@../css/stylesheet.css" text="Управление аккаунтом">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+
+      <Button fx:id="btnProducts" layoutX="24.0" layoutY="112.0" mnemonicParsing="false" onAction="#Services_Pressed" prefHeight="40.0" prefWidth="111.0" styleClass="redline" stylesheets="@../css/stylesheet.css" text="Товары" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+
+      <Button fx:id="btnMakeAppointment" layoutX="24.0" layoutY="182.0" mnemonicParsing="false" onAction="#Make_Appointment_Pressed" prefHeight="40.0" prefWidth="191.0" styleClass="redline" stylesheets="@../css/stylesheet.css" text="Выбрать товар">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnInformation" layoutX="24.0" layoutY="247.0" mnemonicParsing="false" onAction="#Get_Information_Pressed" prefHeight="40.0" prefWidth="111.0" styleClass="redline" stylesheets="@../css/stylesheet.css" text="Заказы">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="226.0" layoutY="31.0" text="Аккаунт сотрудника" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

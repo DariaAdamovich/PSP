@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="547.0" styleClass="adminbg" stylesheets="@../css/background.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="adminFXML.ManageEmployee">
+    <children>
+        <TableView fx:id="employeeTable" layoutX="15.0" layoutY="67.0" onMouseClicked="#OnMouseClicked" opacity="0.76" prefHeight="266.0" prefWidth="507.0">
+            <columns>
+                <TableColumn fx:id="id" prefWidth="53.00000190734863" text="ID" />
+                <TableColumn fx:id="name" minWidth="100.0" prefWidth="221.8000030517578" text="Имя" />
+                <TableColumn fx:id="surname" prefWidth="229.4000244140625" text="Фамилия" />
+            </columns>
+        </TableView>
+        <Button fx:id="btnLogOut" layoutX="409.0" layoutY="14.0" mnemonicParsing="false" onAction="#onLogOut" styleClass="glass" stylesheets="@../css/stylesheet.css" text="Выйти из аккаунта" />
+      <Label layoutX="14.0" layoutY="12.0" text="Сотрудники" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+        <Button fx:id="btnBack" layoutX="457.0" layoutY="361.0" mnemonicParsing="false" onAction="#OnBack" prefHeight="25.0" prefWidth="69.0" styleClass="glass" stylesheets="@../css/stylesheet.css" text="Назад" />
+        <Button fx:id="btnAdd" layoutX="15.0" layoutY="361.0" mnemonicParsing="false" onAction="#OnAdd" styleClass="glass" stylesheets="@../css/stylesheet.css" text="Добавить" />
+        <Button fx:id="btnEdit" layoutX="99.0" layoutY="361.0" mnemonicParsing="false" onAction="#OnEdit" styleClass="glass" stylesheets="@../css/stylesheet.css" text="Редактировать" />
+        <Button fx:id="btnDelete" layoutX="229.0" layoutY="361.0" mnemonicParsing="false" onAction="#OnDelete" styleClass="glass" stylesheets="@../css/stylesheet.css" text="Удалить" />
+    </children>
+
+</AnchorPane>

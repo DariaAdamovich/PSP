@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="bodybg" stylesheets="@../css/background.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="userFXML.ClientAppointments">
+    <children>
+        <TableView fx:id="appointmentTable" layoutX="4.0" layoutY="52.0" onMouseClicked="#OnMouseClicked" opacity="0.76" prefHeight="282.0" prefWidth="643.0">
+            <columns>
+                <TableColumn fx:id="id" prefWidth="40.0" text="ID" />
+                <TableColumn fx:id="date" minWidth="100.0" prefWidth="120.0" text="Дата выдачи" />
+                <TableColumn fx:id="start" prefWidth="120.0" text="Время выдачи" />
+                <TableColumn fx:id="service" prefWidth="223.0" text="Название товара" />
+                <TableColumn fx:id="client" prefWidth="137.0" text="Клиент" />
+            </columns>
+        </TableView>
+        <Button fx:id="btnLogOut" layoutX="503.0" layoutY="13.0" mnemonicParsing="false" onAction="#onLogOut" styleClass="redline" stylesheets="@../css/stylesheet.css" text="Выйти из аккаунта" />
+        <Button fx:id="btnBack" layoutX="560.0" layoutY="361.0" mnemonicParsing="false" onAction="#OnBack" prefHeight="25.0" prefWidth="69.0" styleClass="redline" stylesheets="@../css/stylesheet.css" text="Назад" />
+      <Label layoutX="15.0" layoutY="11.0" text="Заказы" textFill="#8875ea">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+        <Button fx:id="btnDelete" layoutX="20.0" layoutY="361.0" mnemonicParsing="false" onAction="#OnDelete" styleClass="redline" stylesheets="@../css/stylesheet.css" text="Удалить" />
+    </children>
+</AnchorPane>

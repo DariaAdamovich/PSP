@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="625.0" styleClass="adminbg" stylesheets="@../css/background.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="adminFXML.ManageServices">
+    <children>
+        <TableView fx:id="serviceTable" layoutX="20.0" layoutY="59.0" onMouseClicked="#OnMouseClicked" opacity="0.76" prefHeight="282.0" prefWidth="585.0">
+            <columns>
+                <TableColumn fx:id="id" prefWidth="40.0" text="ID" />
+                <TableColumn fx:id="name" minWidth="100.0" prefWidth="200.0" text="Название товара" />
+                <TableColumn fx:id="country" prefWidth="180.0" text="Страна производства" />
+                <TableColumn fx:id="price" prefWidth="180.0" text="Цена" />
+            </columns>
+        </TableView>
+        <Button fx:id="btnLogOut" layoutX="485.0" layoutY="14.0" mnemonicParsing="false" onAction="#onLogOut" styleClass="glass" stylesheets="@../css/stylesheet.css" text="Выйти из аккаунта" />
+        <Button fx:id="btnBack" layoutX="535.0" layoutY="361.0" mnemonicParsing="false" onAction="#OnBack" prefHeight="25.0" prefWidth="69.0" styleClass="glass" stylesheets="@../css/stylesheet.css" text="Назад" />
+      <Label layoutX="19.0" layoutY="12.0" text="Товары" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+        <Button fx:id="btnAdd" layoutX="19.0" layoutY="361.0" mnemonicParsing="false" onAction="#OnAdd" styleClass="glass" stylesheets="@../css/stylesheet.css" text="Добавить" />
+        <Button fx:id="btnEdit" layoutX="103.0" layoutY="361.0" mnemonicParsing="false" onAction="#OnEdit" styleClass="glass" stylesheets="@../css/stylesheet.css" text="Редактировать" />
+        <Button fx:id="btnDelete" layoutX="235.0" layoutY="361.0" mnemonicParsing="false" onAction="#OnDelete" styleClass="glass" stylesheets="@../css/stylesheet.css" text="Удалить" />
+    </children>
+</AnchorPane>

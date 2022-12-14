@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="statisticsbg" stylesheets="@../css/background.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="adminFXML.Statistic">
+   <children>
+      <BarChart fx:id="BarChart" layoutX="52.0" layoutY="9.0" prefHeight="381.0" prefWidth="472.0" title="Статистика продаж">
+        <xAxis>
+          <CategoryAxis fx:id="axisX" label="Дата" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="axisY" label="Количество заказов" side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true" styleClass="..\css\background.css" />
+      <Button fx:id="btnBack" layoutX="524.0" layoutY="361.0" mnemonicParsing="false" onAction="#onBack" styleClass="glass" stylesheets="@../css/stylesheet.css" text="Назад" />
+   </children>
+</AnchorPane>

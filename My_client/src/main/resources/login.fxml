@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="377.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Login">
+    <children>
+        <ImageView fitHeight="532.0" fitWidth="750.0" layoutX="-1.0" layoutY="-18.0" pickOnBounds="true" preserveRatio="true">
+           <image>
+               <Image url="@images/login.jpg" />
+           </image>
+        </ImageView>
+        <Label layoutX="60.0" layoutY="101.0" prefHeight="50.0" prefWidth="176.0" text="Введите ваш логин:" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font></Label>
+        <Label layoutX="60.0" layoutY="143.0" prefHeight="55.0" prefWidth="176.0" text="Введите ваш пароль:" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font></Label>
+        <PasswordField fx:id="passwordfieldPassword" layoutX="245.0" layoutY="161.0" prefHeight="26.0" prefWidth="171.0" />
+        <TextField fx:id="textfieldLogin" layoutX="245.0" layoutY="115.0" prefHeight="26.0" prefWidth="171.0" />
+        <Button fx:id="buttonRegister" layoutX="245.0" layoutY="249.0" mnemonicParsing="false" onAction="#Register_Pressed" prefHeight="25.0" prefWidth="171.0" styleClass="glass" stylesheets="@css/stylesheet.css" text="Регистрация" />
+        <Button fx:id="buttonLogin" layoutX="246.0" layoutY="298.0" mnemonicParsing="false" onAction="#Login_Pressed" prefHeight="25.0" prefWidth="171.0" styleClass="glass" stylesheets="@css/stylesheet.css" text="Войти" />
+        <Label fx:id="labelMessage" layoutX="87.0" layoutY="282.0" prefHeight="29.0" prefWidth="507.0" text="Ошибка входа в систему!" textFill="RED" visible="false">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+        <Label layoutX="161.0" layoutY="26.0" text="ДОБРО ПОЖАЛОВАТЬ!" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="30.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

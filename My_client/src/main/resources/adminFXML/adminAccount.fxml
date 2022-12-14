@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="adminbg" stylesheets="@../css/background.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="adminFXML.AdminAccount">
+   <Label layoutX="152.0" layoutY="28.0" text="Аккаунт администратора" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="24.0" />
+      </font>
+   </Label>
+   <GridPane layoutX="30.0" layoutY="72.0" prefHeight="276.0" prefWidth="470.0" AnchorPane.bottomAnchor="52.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="72.0">
+      <columnConstraints>
+         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      </columnConstraints>
+      <rowConstraints>
+         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+      <Button fx:id="buttonManageUsers" mnemonicParsing="false" onAction="#Manage_Users_Pressed" styleClass="glass-grey" stylesheets="@../css/buttons.css" text="Клиенты">
+         <GridPane.margin>
+            <Insets left="20.0" />
+         </GridPane.margin>
+      </Button>
+      <Button fx:id="btnUsers" mnemonicParsing="false" onAction="#usersPressed" styleClass="glass-grey" stylesheets="@../css/buttons.css" text="Пользователи" textAlignment="JUSTIFY" GridPane.columnIndex="1">
+         <GridPane.margin>
+            <Insets left="20.0" />
+         </GridPane.margin>
+      </Button>
+      <Button fx:id="btnEmployees" mnemonicParsing="false" onAction="#Manage_Employees_Pressed" styleClass="glass-grey" stylesheets="@../css/buttons.css" text="Сотрудники" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets left="20.0" />
+         </GridPane.margin>
+      </Button>
+      <Button fx:id="btnServices" mnemonicParsing="false" onAction="#Manage_Services_Pressed" styleClass="glass-grey" stylesheets="@../css/buttons.css" text="Товары" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets left="20.0" />
+         </GridPane.margin>
+      </Button>
+      <Button fx:id="btnAppointments" mnemonicParsing="false" onAction="#Manage_Appointments_Pressed" styleClass="glass-grey" stylesheets="@../css/buttons.css" text="Заказы" textFill="BLACK" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets left="20.0" />
+         </GridPane.margin>
+      </Button>
+
+
+      <Button fx:id="btnAddEmplServ" mnemonicParsing="false" onAction="#onAddEmplServ" styleClass="glass" stylesheets="@../css/stylesheet.css" text="Назначить ответственного" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets left="20.0" />
+         </GridPane.margin>
+      </Button>
+
+   </GridPane>
+   <Button fx:id="btnLogOut" layoutX="513.0" layoutY="348.0" mnemonicParsing="false" onAction="#onLogOut" styleClass="glass" stylesheets="@../css/stylesheet.css" text="Выход" AnchorPane.bottomAnchor="26.399999999999977" />
+</AnchorPane>
